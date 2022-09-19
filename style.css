@@ -1,0 +1,146 @@
+body{
+    background-image:url("image/wallpaperflare.com_wallpaper.jpg");
+    font-size: 16px;
+    background-attachment: scroll;
+    background-repeat: repeat-y, repeat-y;
+    background-position: left, right;
+    background-size:cover;
+    background-position: center;
+    }
+a{color: rgba(157, 230, 22, 0.555) ;
+}
+p{
+    color: rgb(221, 6, 6);
+}
+form{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 5px solid darkblue
+    
+
+
+}
+li{
+    color: rgb(253, 0, 0);
+    text-align: center;
+    height: auto;
+    background-color: #000000;
+    text-align: center;
+        display: block;
+        width: 310px;
+        height: auto;
+        list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #bbb;
+    
+}
+textarea {
+  width:100%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+}
+    
+
+
+
+
+header{
+	width: 100%;
+    top: 0px;
+	height: 70px;
+    opacity: 100%;
+    position: absolute;
+    color: brown;
+    font: 4em sans-serif;
+    font-style:initial;
+    font: optional;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: normal;
+    font-language-override: inherit;
+    text-align: center;
+    opacity: 100%;
+    background: #D8E3AB url(image/wallpaperflare.com_wallpaper.jpg) no-repeat 5% 50%;
+background-attachment: scroll ;
+    
+    
+position: fixed;
+
+}
+.menu{
+	list-style: none;
+	position: absolute;
+	top: 54px;
+	right: 100px;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+footer{
+    background-color: #000000;
+    width: 100%;
+    height: 75px;
+    
+}
+h11{
+    color: aliceblue;
+
+}
+ol{
+opacity:inherit 66%;    border: 5px solid darkblue;
+
+
+
+}
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  input
+  {
+    background-color: #fafafa;
+    border:0;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    transition: .3s box-shadow;
+  }
+  label {
+    display:block;
+    margin-bottom:4px;
+    position: relative; /* to contain absolute elements */
+    padding-left:30px; /* free space for custom radio button */
+    cursor: pointer;
+  }
+  
+  /* custom radio button */
+  label span {
+    position: absolute;
+    /* position to the free space in <label> */
+    top:0;
+    left:0;
+    width:20px; 
+    height:20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    transition: .3s background-color; /* slight transition */
+  }
+  data {
+    border: 2px solid #eee;}
+    input{
+        padding:10px;
+        border:0;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        
+        border-radius:10px;
+
+    }
