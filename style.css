@@ -7,38 +7,42 @@ body{
     background-size:cover;
     background-position: center;
     }
-a{color: rgba(157, 230, 22, 0.555) ;
-}
+
 p{
     color: rgb(221, 6, 6);
 }
 form{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 0px;
     overflow: hidden;
-    border: 5px solid darkblue
+    border: 2px solid darkblue;
+    background-color: blueviolet;
+    text-decoration-color: white;
     
 
 
 }
+
 li{
     color: rgb(253, 0, 0);
     text-align: center;
     height: auto;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.32);
     text-align: center;
         display: block;
         width: 310px;
         height: auto;
         list-style-type: none;
-    margin: 0;
     padding: 0;
     border-right: 1px solid #bbb;
-    
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+    margin-right:5px; /*Добавляем отступ у пунктов меню*/
+
+
 }
 textarea {
-  width:100%;
+  width:auto;
   resize: vertical;
   padding:15px;
   border-radius:15px;
@@ -51,40 +55,39 @@ textarea {
 
 
 
-header{
-	width: 100%;
+header {
+    width: 100%;
     top: 0px;
-	height: 70px;
+    height: 70px;
     opacity: 100%;
     position: absolute;
     color: brown;
     font: 4em sans-serif;
-    font-style:initial;
+    font-style: initial;
     font: optional;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-variant: normal;
     font-language-override: inherit;
     text-align: center;
     opacity: 100%;
-    background: #D8E3AB url(image/wallpaperflare.com_wallpaper.jpg) no-repeat 5% 50%;
-background-attachment: scroll ;
-    
-    
-position: fixed;
+    background: #D8E3AB url(image/wallpaperflare.com_wallpaper.jpg) no-repeat scroll 5% 50%;
+
+
+    position: relative;
 
 }
 .menu{
-	list-style: none;
-	position: absolute;
+    position: absolute;
 	top: 54px;
 	right: 100px;
     position: fixed;
-    list-style-type: none;
+    list-style: none none;
     margin: 0;
     padding: 0;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+
 }
 footer{
     background-color: #000000;
@@ -97,16 +100,37 @@ h11{
 
 }
 ol{
-opacity:inherit 66%;    border: 5px solid darkblue;
 
-
-
+    border: 5px solid darkblue;
+    }
+legend{
+    color: white;
 }
-  ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+
+
+
+
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+    margin-top:25px; /*делаем отступ сверху*/
+}
+a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background: rgba(48, 168, 230, 0); /*добавляем фон к пункту меню*/
+    color:#fff; /*меняем цвет ссылок*/
+    padding:10px; /*добавляем отступ*/
+    font-family: arial; /*меняем шрифт*/
+    border-radius:25px; /*добавляем скругление*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+}
+a:hover {
+    background: #310bd9;/*добавляем эффект при наведении*/
+}
+
   input
   {
     background-color: #fafafa;
@@ -120,6 +144,7 @@ opacity:inherit 66%;    border: 5px solid darkblue;
     position: relative; /* to contain absolute elements */
     padding-left:30px; /* free space for custom radio button */
     cursor: pointer;
+      color: white;
   }
   
   /* custom radio button */
@@ -144,3 +169,45 @@ opacity:inherit 66%;    border: 5px solid darkblue;
         border-radius:10px;
 
     }
+
+@media screen and (max-width: 980px) {
+    #pagewrap {
+        width: 95%;
+    }
+    #content {
+        width: 60%;
+        padding: 3% 4%;
+    }
+    #sidebar {
+        width: 30%;
+    }
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 980px) {
+    #pagewrap {
+        width: 95%;
+    }
+    #content {
+        width: 60%;
+        padding: 3% 4%;
+    }
+    #sidebar {
+        width: 30%;
+    }
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    html {
+        -webkit-text-size-adjust: none;
+    }
+    #main-nav a {
+        font-size: 90%;
+        padding: 10px 8px;
+    }
+}
