@@ -12,12 +12,13 @@ p{
     color: rgb(221, 6, 6);
 }
 form{
+    display: block;
     list-style-type: none;
     margin: auto;
     padding: 0px;
     overflow: hidden;
     border: 2px solid darkblue;
-    background-color: blueviolet;
+    background-color: rgba(138, 43, 226, 0.22);
     text-decoration-color: white;
     
 
@@ -30,17 +31,20 @@ li{
     height: auto;
     background-color: rgba(0, 0, 0, 0.32);
     text-align: center;
-        display: block;
+        display: flex;
         width: 310px;
         height: auto;
         list-style-type: none;
     padding: 0;
     border-right: 1px solid #bbb;
-    float:left; /*Размещаем список горизонтально для реализации меню*/
-    margin-right:5px; /*Добавляем отступ у пунктов меню*/
-
-
+    flex-flow: row wrap;
+    /* Это выровняет элементы по конечной части линии на главной оси */
+    justify-content: center;
+    flex-grow: 1;
 }
+
+
+
 textarea {
   width:auto;
   resize: vertical;
@@ -51,29 +55,37 @@ textarea {
   height:150px;
 }
     
-
+.left-item{
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+    margin-right:5px; /
+}
+.right-item
+{
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+    margin-right:5px; /
+}
 
 
 
 header {
-    width: 100%;
-    top: 0px;
-    height: 70px;
-    opacity: 100%;
-    position: absolute;
-    color: brown;
-    font: 4em sans-serif;
-    font-style: initial;
-    font: optional;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-variant: normal;
-    font-language-override: inherit;
-    text-align: center;
+    display: flex;
+
     opacity: 100%;
     background: #D8E3AB url(image/wallpaperflare.com_wallpaper.jpg) no-repeat scroll 5% 50%;
 
 
     position: relative;
+
+}
+.aa{
+   ;}
+
+.nems
+{
+    display: flex ;
+    color: darkred;
+    position: center;
+    text-align: center;
 
 }
 .menu{
@@ -99,10 +111,7 @@ h11{
     color: aliceblue;
 
 }
-ol{
 
-    border: 5px solid darkblue;
-    }
 legend{
     color: white;
 }
@@ -170,44 +179,96 @@ a:hover {
 
     }
 
-@media screen and (max-width: 980px) {
-    #pagewrap {
-        width: 95%;
-    }
-    #content {
-        width: 60%;
-        padding: 3% 4%;
-    }
-    #sidebar {
-        width: 30%;
-    }
-    #sidebar .widget {
-        padding: 8% 7%;
-        margin-bottom: 10px;
+.nav {
+
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+}
+.parent {
+    display: flex;
+    height: auto; /* Или что угодно */
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.child {
+    width: auto;  /* Или что угодно */
+    height: auto; /* Или что угодно */
+    margin: auto;  /* Магия! */
+}
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    /* Это выровняет элементы по конечной части линии на главной оси */
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+/* Средние экраны */
+@media all and (max-width: 800px) {
+    .navigation {
+        /* На экранах среднего размера мы центрируем элементы, равномерно распределяя пустое пространство вокруг элементов */
+        justify-content: space-around;
     }
 }
-@media screen and (max-width: 980px) {
-    #pagewrap {
-        width: 95%;
-    }
-    #content {
-        width: 60%;
-        padding: 3% 4%;
-    }
-    #sidebar {
-        width: 30%;
-    }
-    #sidebar .widget {
-        padding: 8% 7%;
-        margin-bottom: 10px;
+
+/* Маленькие экраны */
+@media all and (max-width: 500px) {
+    .navigation {
+        /* На маленьких экранах мы больше не используем направление строки, а используем столбец */
+        flex-direction: column;
     }
 }
-@media screen and (max-width: 480px) {
-    html {
-        -webkit-text-size-adjust: none;
+.flex-container {
+    /* Сначала мы создаем flex контекст */
+    display: flex;
+
+    /* Затем мы определяем flex-direction и разрешаем элементам переходить на новые строки
+     * Запомните, что это то же самое что и:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+
+    /* Затем мы определяем, как распределяется оставшееся пространство */
+    justify-content: space-around;
+}
+
+.menu
+{
+    display: flex;
+}
+.menu-main{
+    display: flex;
+}
+@media screen and (max-width: 900px) {
+    .parent {
+        margin: auto;
+
     }
-    #main-nav a {
-        font-size: 90%;
-        padding: 10px 8px;
+    .navigation  {
+        flex-direction: column;
+    }
+    .navigation .menu-main {
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
+oi {
+    display: flex;
+}
+.radio {
+    display: flex;
+
+}
+@media screen and (max-width: 900px){
+    .form{
+
+        flex-direction: column;
+        align-self: center;
     }
 }
