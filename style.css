@@ -57,12 +57,12 @@ textarea {
     
 .left-item{
     float:left; /*Размещаем список горизонтально для реализации меню*/
-    margin-right:5px; /
+    margin-right:5px; 
 }
 .right-item
 {
     float:left; /*Размещаем список горизонтально для реализации меню*/
-    margin-right:5px; /
+    margin-right:5px; 
 }
 
 
@@ -78,14 +78,18 @@ header {
 
 }
 .aa{
-   ;}
+    
+   }
 
 .nems
 {
-    display: flex ;
+  display: flex ;
     color: darkred;
     position: center;
     text-align: center;
+    margin: auto;
+    font-size: 72px;
+    
 
 }
 .menu{
@@ -115,7 +119,11 @@ h11{
 legend{
     color: white;
 }
+.ends{
+    display: flex;
+    flex: auto;
 
+}
 
 
 
@@ -212,8 +220,14 @@ a:hover {
     .navigation {
         /* На экранах среднего размера мы центрируем элементы, равномерно распределяя пустое пространство вокруг элементов */
         justify-content: space-around;
+
     }
+    form{
+        order: 0;
+      }
+   
 }
+
 
 /* Маленькие экраны */
 @media all and (max-width: 500px) {
@@ -221,6 +235,17 @@ a:hover {
         /* На маленьких экранах мы больше не используем направление строки, а используем столбец */
         flex-direction: column;
     }
+    form{
+        order: 0;
+      }
+      .nems{
+        flex-direction: column;
+      }
+      .radio
+      {
+        flex-direction: column;
+      }
+
 }
 .flex-container {
     /* Сначала мы создаем flex контекст */
@@ -243,6 +268,8 @@ a:hover {
 }
 .menu-main{
     display: flex;
+    
+
 }
 @media screen and (max-width: 900px) {
     .parent {
@@ -256,19 +283,92 @@ a:hover {
         flex-direction: column;
         align-self: center;
     }
+    .table{
+        flex-direction: column;
+        align-self: center;
+    }
+    .menu-main{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    form{
+        order: 0;
+      }
+      .nems{
+        flex-direction: column;
+      }
+      .radio
+      {
+        flex-direction: column;
+      }
 }
 
 oi {
     display: flex;
+
+
 }
 .radio {
     display: flex;
-
+ 
+      flex-direction: column;
 }
+
 @media screen and (max-width: 900px){
     .form{
 
         flex-direction: column;
         align-self: center;
     }
+    .table{
+        flex-direction: column;
+        align-self: center;
+    }
 }
+table {
+    flex: auto;
+    border-collapse: collapse; 
+    line-height: 1.1;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background:  radial-gradient(farthest-corner at 50% 50%, rgba(77, 10, 233, 0.5), #b312db73);
+    color: #0C213B;
+    margin: auto;
+  }
+  caption {
+    font-family: annabelle, cursive;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 10px; 
+    color: #F3CD26;
+    text-shadow: 1px 1px 0 rgba(107, 42, 96, 0.863);
+   }
+  caption:before, caption:after {
+    content: "\274B";
+    color: #A9E2CC;
+    margin: 0 10px;
+  }
+  th {
+    color: #fff;
+    padding: 10px; 
+    border: 1px solid #A9E2CC;
+  }
+  td {
+    color: #fff;
+    font-size: 0.8em;
+    padding: 5px 7px;
+    border: 1px solid #A9E2CC;
+  }
+  .first {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
+  .flex-order{
+    display: flex;
+    flex-direction: column;
+
+  }
+  form{
+    order: -1;
+  }
