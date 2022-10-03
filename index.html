@@ -2,9 +2,12 @@
 
 
 <head xmlns="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+    
     <meta charset="8-UTF">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 
 
@@ -71,80 +74,61 @@
   <tr>
     <th rowspan="2" class="first">Кухня</th>
     <th colspan="2">Холодные блюда</th>
-    <th colspan="2">Горячие блюда</th>
-    <th rowspan="2">Десерты</th>
+   
   </tr>
   <tr>
     <td class="first">Салаты</td>
     <td class="first">Закуски</td>
-    <td class="first">Первые блюда</td>
-    <td class="first">Вторые блюда</td>
+   
   </tr>
   <tr>
     <td rowspan="3" class="first">Русская</td>
     <td>Винегрет</td>
     <td>Язык с хреном</td>
-    <td>Щи с квашеной капустой</td>
-    <td>Вареники с картошкой</td>
-    <td>Печеные яблоки с медом</td>
+   
   </tr>
   <tr>
     <td>Оливье</td>
     <td>Студень говяжий</td>
-    <td>Рассольник домашний</td>
-    <td>Караси запеченые в сметане</td>
-    <td>Блинчатый пирог</td>
+
   </tr>
   <tr>
     <td>Сельдь под "шубой"</td>
     <td>Судак заливной</td>
-    <td>Мясная солянка</td>
-    <td>Котлеты "Пожарские"</td>
-    <td>Пирожное "Картошка"</td>
+ 
     </tr>
   <tr>
     <td rowspan="3" class="first">Испанская</td>
     <td>Севиче из гребешков</td>
     <td>Эмпанадас</td>
-    <td>Хлебный суп с чесноком</td>
-    <td>Паэлья с морепродуктами</td>
-    <td>Чуррос</td>
+   
     </tr>
   <tr>
     <td>Тимбал из авокадо и тунца</td>
     <td>Ахотомате</td>
-    <td>Астурийская фабада</td>
-    <td>Свиное раксо</td>
-    <td>Альмойшавена</td>
+   
+  
     </tr>
   <tr>
     <td>Фасоль с ветчиной</td>
     <td>Чанфайна</td>
-    <td>Рыбный суп с манными клецками </td>
-    <td>Тортилья картофельная</td>
-    <td>Бунуэлос</td>
+    
     </tr>
   <tr>
     <td rowspan="3" class="first">Французская</td>
     <td>Вогезский салат</td>
     <td>Рийет из курицы</td>
-    <td>Баклажанный крем-суп "Ренуар"</td>
-    <td>Картофель огратен</td>
-    <td>Бриоши</td>
+    
     </tr>
   <tr>
     <td>Салат "Панзанелла"</td>
     <td>Делисьез из сыра</td>
-    <td>Французский тыквенный суп</td>
-    <td>Гратин из птицы</td>
-    <td>Лигурийский лимонный пирог</td>
+  
     </tr>
   <tr>
     <td>Тар-тар</td>
     <td>Маринованный лосось</td>
-    <td>Суп "Конти"</td>
-    <td>Тартифлетт</td>
-    <td>Саварен "Триумф"</td>
+   
     </tr>
     
   </table>
@@ -153,7 +137,7 @@
 
 
 <form>
-
+  
     <legend>Форма</legend>
     <div><label>
       <br>Имя:<br><input type="text" required placeholder="Введите имя"></label></div>
@@ -161,15 +145,15 @@
       <br><div><label> E-mail:<br><input type="email" required placeholder="Введите E-mail"></label></div>
       <br>
       <div class="data">
-        <legend>Выберете дату рождения:</legend> <br> <label><input type="date" name="Введите дату"></label></div>
+        <legend>Выберете дату рождения:</legend> <br> <label><input type="date" required name="Введите дату"></label></div>
       <div class="radio">
         <legend>Выберете свой пол:</legend><br>
   
-        <label><input  type="radio" name="sex" value="мужской"> мужской
+        <label><input  type="radio" name="sex" value="мужской" required="required"> мужской
           <div class="radio-control male"></div>
         </label>
         <label>
-          <input type="radio" name="sex" value="женский">женский
+          <input type="radio" name="sex" value="женский" required="required">женский
           <div class="radio-control female"></div>
         </label>
       </div>
@@ -177,15 +161,15 @@
   <legend>Выберете количество конечностей:</legend>
         <div class="radio">
           <label>
-            <input type="radio" name="ends" value="1"> 1 конечность
+            <input type="radio" name="ends"  value="1" required="required"> 1 конечность
             <div class="radio-control 1"></div>
           </label>
           <label>
-            <input type="radio" name="ends" value="2"> 2 конечности
+            <input type="radio" name="ends" value="2" required="required"> 2 конечности
             <div class="radio-control 2"></div>
           </label>
           <label>
-            <input type="radio" name="ends" value="3"> 3 конечности
+            <input type="radio" name="ends" value="3"required="required"> 3 конечности
             <div class="radio-control 3"></div>
           </label>
           <label>
@@ -196,7 +180,7 @@
         <br>
   <legend>Выберете способности:<legend>
             <label>
-          <select name="select" size="3" multiple>
+          <select name="select" required="required" size="3" multiple>
             <option selected value="s1">бессмертие</option>
             <option value="s2"> прохождение сквозь стены</option>
             <option value="s3">левитация</option>
@@ -205,15 +189,15 @@
           <br>
          <br>
           <legend>Введите биографию:</legend>
-      <div class="textarea" >
+      <div class=">textarea"  placeholder="Ваша биография"required="required" >
         <label>
-          <textarea cols="14" rows="4"></textarea>
+          <textarea cols="14" rows="4" required="required"></textarea>
         </label>
       </div>
       <div class="checkbox">
-        <input type="checkbox" name="с контрактом ознакомлен (а) "> С контрактом ознакомлен (а)
+        <input type="checkbox"required="required" name="с контрактом ознакомлен (а) " > С контрактом ознакомлен (а)
       </div>
-      <p><input type="button" value=" Отправить "></p>
+      <p><input type="submit"  value=" Отправить " required="required"></p>
 
     </form>
 <footer><h11>All right reserved<br> Made by Sawert's company in 2022</h11></footer>

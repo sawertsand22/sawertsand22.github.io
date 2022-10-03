@@ -1,3 +1,6 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
 body{
     background-image:url("image/wallpaperflare.com_wallpaper.jpg");
     font-size: 16px;
@@ -12,6 +15,7 @@ p{
     color: rgb(221, 6, 6);
 }
 form{
+    
     display: block;
     list-style-type: none;
     margin: auto;
@@ -78,7 +82,7 @@ header {
 
 }
 .aa{
-    
+    text-shadow: 1px 1px 0 rgb(17, 0, 14)
    }
 
 .nems
@@ -89,7 +93,7 @@ header {
     text-align: center;
     margin: auto;
     font-size: 72px;
-    
+    text-shadow: 1px 1px 0 rgb(17, 0, 14)
 
 }
 .menu{
@@ -340,8 +344,8 @@ table {
     font-weight: bold;
     font-size: 2em;
     padding: 10px; 
-    color: #F3CD26;
-    text-shadow: 1px 1px 0 rgba(107, 42, 96, 0.863);
+    color: #7f26f3;
+    text-shadow: 1px 1px 0 rgb(17, 0, 14);
    }
   caption:before, caption:after {
     content: "\274B";
